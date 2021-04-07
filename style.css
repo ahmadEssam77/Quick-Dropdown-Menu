@@ -1,0 +1,95 @@
+/* :root {
+
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+}
+
+.menu-bar {
+    background: #ddd;
+}
+
+.menu-bar ul {
+    list-style: none;
+}
+
+.menu-bar ul li {
+    display: inline-block;
+    padding: 1rem;
+    position: relative;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hide The Nested ul */
+.menu-bar .dropdown {
+    display: none;
+}
+
+/* Adjust contents inside the dropdown menu */
+.menu-bar .dropdown {
+    background: #ccc;
+}
+
+.menu-bar .dropdown li {
+    display: block;
+}
+
+.menu-bar .dropdown li:hover {
+    background: #ddd;
+}
+
+/* Hover the dropdown menu */
+.menu-bar .menu-dropdown:hover {
+    cursor: pointer;
+}
+
+.menu-bar .menu-dropdown:hover ul {
+    display: block;
+    position: absolute;
+    left: 3px;
+    width: 190px;
+    margin-top: 1rem;
+}
+
+/* Direction of the menu */
+/* .menu-bar {
+    display: flex;
+    flex-direction: row-reverse;
+} */
+
+
+/* Showcase */
+.showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    padding: 0 2rem;
+    background: coral;
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+    .menu-bar ul li {
+        display: block;
+    }
+
+    .menu-bar .menu-dropdown:hover ul {
+        width: 100%;
+        position: relative;
+    }
+}
